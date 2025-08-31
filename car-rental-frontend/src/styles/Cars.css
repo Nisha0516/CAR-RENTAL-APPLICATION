@@ -1,0 +1,19 @@
+/* Cars.css */
+.page-header { display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;}
+.car-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+/* src/styles/Cars.css */
+.car-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  background: #f9f9f9;
+  text-align: center;
+  width: 200px;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}

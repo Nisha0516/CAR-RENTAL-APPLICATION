@@ -1,0 +1,35 @@
+/* index.css - global resets */
+:root {
+  --primary: #0b5cff;
+  --muted: #666;
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --border: #e6e9ef;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: var(--bg); color: #222; }
+a { color: inherit; text-decoration: none; }
+.main-container { padding: 24px 16px; max-width: 1200px; margin: 0 auto; min-height: calc(100vh - 160px); }
+.page { padding: 12px 0; }
+h1, h2, h3 { margin: 0 0 8px 0; }
+p { margin: 0 0 12px 0; color: var(--muted); }
+.btn-primary {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+}
+.btn-outline {
+  display: inline-block;
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+}
+.link-btn { background: transparent; border: none; color: #fff; cursor: pointer; }
+.muted { color: var(--muted); }
+.no-img, .no-img-large { background: #f0f2f6; display:flex; align-items:center; justify-content:center; color: #999; }

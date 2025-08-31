@@ -1,0 +1,33 @@
+.car-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.car-card h3 {
+  margin: 15px 0 10px;
+}
+
+.car-card button {
+  padding: 10px 15px;
+  background: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.car-card button:hover {
+  background: #3a0ca3;
+}

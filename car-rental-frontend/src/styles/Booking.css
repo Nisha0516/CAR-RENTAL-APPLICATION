@@ -1,0 +1,6 @@
+/* Booking.css */
+.booking-grid { display:flex; gap: 16px; align-items: flex-start; }
+.booking-car { width: 320px; background: var(--card); padding: 12px; border-radius: 8px; border: 1px solid var(--border); }
+.booking-form { display:flex; flex-direction: column; gap: 8px; max-width: 480px; }
+.booking-form label { display:flex; flex-direction: column; gap: 6px; }
+.booking-summary { margin-top: 8px; padding: 8px; border: 1px dashed var(--border); border-radius: 6px; background: #fff; }

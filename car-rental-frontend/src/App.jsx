@@ -1,12 +1,17 @@
 // src/App.jsx
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import AIRecommendations from './pages/AIRecommendation';
-import Chatbot from './components/Chatbot'; // Import the chatbot
+import Chatbot from './components/Chatbot';
+
+import Fleet from './pages/Fleet';
+// In your App.jsx
+import CarDetail from './pages/CarDetails';
 import './App.css';
 
 // Protected Route Component
@@ -69,11 +74,19 @@ function App() {
               </ProtectedRoute>
             } 
           />
-          
+          <Route 
+            path="/fleet" 
+            element={
+              <ProtectedRoute>
+                <Fleet />
+              </ProtectedRoute>
+            } 
+          />
+          <Route path="/cars/:id" element={<CarDetail />} />
           {/* Fallback route */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-         <Chatbot />
+        <Chatbot />
       </div>
     </Router>
   );
